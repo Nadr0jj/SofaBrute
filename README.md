@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.png" height = "250" width = "750">
+  <img src="images/hero.png" height = "250" width = "750">
 </p>
 
 ## What is SofaBrute?
@@ -21,7 +21,7 @@ In 1996, Leo Moser asked the question "what is the shape of largest area in the 
 The algorithm aims to solve a reformulated (but equivalent) version of the problem. Since GitHub does not support LaTex markdown, see the below image for the formulation.
 
 <p align="center">
-  <img src="formulation.png">
+  <img src="images/formulation.png">
 </p>
 
 The algorithm aims to solve this optimization problem by modifying the positions of H_0, ..., H_N one at a time. Starting with H_0, the algorithm will "wiggle" the hallway and see if the wiggle resulted in a larger intersection area. If the wiggle resutls in a decrease or no change at all to the area, the algorithm places H_0 back in its pre-wiggle position and moves to H_1, H_2, etc. Wiggling is always done by pushing H_i parallel to its edges. If the algorithm is unable to find an area-increasing move for any of the rotated hallways, the algorithm will begin decreasing the "size" of the wiggle. If the algorithm is unable to find an area-increasing move after 4^(N+1) wiggle attempts, the algorithm terminates.
@@ -39,7 +39,7 @@ Upon running the program, the user will be prompted with four parameters to set.
 Without smoothing, for the 90-degree hallway case, the algorithm converges to the true area of Gerver's sofa linearly as a function of N. With smoothing, the algorithm converges quadratically as a function of N. 
 
 <p align="center">
-  <img src="error_convergence.png">
+  <img src="images/error_convergence.png">
 </p>
 
 ## Dependencies

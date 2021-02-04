@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt #to plot polygons
 from descartes import PolygonPatch #to help matplotlib plot polygons
 import matplotlib
 from scipy import interpolate
-matplotlib.use("GTK3Agg")
+matplotlib.use("GTK3Agg") #not required
 
 def generate_hallway(t,a):
     """Generates a hallway of angle a at x(t) where x is the rotation path"""
@@ -269,6 +269,7 @@ def plot_mover(hallway,hallway_set,theta,N,i,hway_num,smooth=True):
     plt.close()
 
 #init vars
+iterations = int(1e10) #program will terminate when iterations met or no area increasing move exists
 ang_val = [float(x) for x in input("Enter angle val(s): ").split()]
 N = int(input("Enter num of anchor points (5+): "))
 smth = int(input("Enter 1 for smoothing 0 for none: "))
@@ -278,12 +279,16 @@ for a in ang_val:
     hallway = hallway_intersector(N,a,a)
     hallway_set = hallway_list(N,a,a)
     hallway, hallway_set, i = balance(a,N,iterations,hallway,hallway_set)
+    ###
+    #Want to serialize the polygon object or hallway set instead of saving a plot?
+    #Remove unneeded plot_saver references and replace with
+    #pickle logic
+    ###
     if not mover:
         plot_saver(hallway,hallway_set,a,N,i,smooth=smth)
     if mover:
         for j in range(1,N+1):
             plot_mover(hallway,hallway_set,a,N,i,j,smooth=smth)
-
 
 
 
