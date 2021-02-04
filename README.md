@@ -11,7 +11,7 @@ SofaBrute is a tool written in Python which aims to help researchers understand 
 - [How to Use](#how-to-use)
 - [How Does Smoothing Effect Convergence?](#how-does-smoothing-effect-convergence)
 - [Dependencies](#dependencies)
-- [Questions?](#question)
+- [Questions?](#questions)
 - [Disclaimer](#disclaimer)
 
 ## A Brief History of the Problem
