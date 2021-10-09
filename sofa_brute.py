@@ -8,7 +8,6 @@ from matplotlib import pyplot as plt #to plot polygons
 from descartes import PolygonPatch #to help matplotlib plot polygons
 import matplotlib
 from scipy import interpolate
-matplotlib.use("GTK3Agg") #not required
 
 def generate_hallway(t,a):
     """Generates a hallway of angle a at x(t) where x is the rotation path"""
