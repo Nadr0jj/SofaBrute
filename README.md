@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="images/hero.png" height = "250" width = "750">
-</p>
+# SofaBrute
 
 ## What is SofaBrute?
 SofaBrute is a tool written in Python which aims to help researchers understand the rotation path of the (conjectured) omptimal sofa as a function of the hallway angle. SofaBrute does this by "brute forcing" (see algorithm section) its way to a (conjectured) optimal sofa, and then saving plots of the sofa in the hallway at various points through its rotation to the local folder. SofaBrute was originally concieved as companion software to a research paper I wrote to satisfy a graduation requirement during the last quarter of my undergraduate degree in Math and Scientific Computation at UC Davis. 
