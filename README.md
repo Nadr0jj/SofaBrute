@@ -3,6 +3,9 @@
 ## What is SofaBrute?
 SofaBrute is a tool written in Python which aims to help researchers understand the rotation path of the (conjectured) omptimal sofa as a function of the hallway angle. SofaBrute does this by "brute forcing" (see algorithm section) its way to a (conjectured) optimal sofa, and then saving plots of the sofa in the hallway at various points through its rotation to the local folder. SofaBrute was originally concieved as companion software to a research paper I wrote to satisfy a graduation requirement during the last quarter of my undergraduate degree in Math and Scientific Computation at UC Davis. 
 
+## Disclaimer
+This program was originally concieved as a ~100 line tool I quickly wrote up to explore some ideas computationally. Slowly, it evolved into what it is today. As a result, the code is in no way documented, polished or optimized. I have largely left all of my notes to myself in the program, and I've only removed unused code which I think could be confusing.
+
 ## Table of Contents
 - [A Brief History of the Problem](#a-brief-history-of-the-problem)
 - [Algorithm](#algorithm)
@@ -10,7 +13,6 @@ SofaBrute is a tool written in Python which aims to help researchers understand 
 - [How Does Smoothing Effect Convergence?](#how-does-smoothing-effect-convergence)
 - [Dependencies](#dependencies)
 - [Questions?](#questions)
-- [Disclaimer](#disclaimer)
 
 ## A Brief History of the Problem
 In 1996, Leo Moser asked the question "what is the shape of largest area in the plane that can be moved around a right-angled corner in a two-dimensional hallway of width 1?" This problem statement became known as the moving sofa problem. A specific construction was given by Joseph Gerver in 1992 which he conjectured to be the solution to Moser's problem. However, Gerver was unable to give proof and to this day his conjecture remains unproven.
@@ -50,5 +52,3 @@ Without smoothing, for the 90-degree hallway case, the algorithm converges to th
 ## Questions?
 Please feel free to get in touch if you have any questions about the program. I am happy to respond to emails. You can contact me at jjfields [a][t] uw [d][o][t] edu.
 
-## Disclaimer
-This program was originally concieved as a ~100 line tool I quickly wrote up to explore some ideas computationally. Slowly, it evolved into what it is today. As a result, the code is in no way polished or optimized. I have largely left all of my notes to myself in the program, and I've only removed unused code which I think could be confusing.
